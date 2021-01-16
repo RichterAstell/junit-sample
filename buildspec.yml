@@ -5,10 +5,10 @@ phases:
     commands:
       - echo start build at `date`
       - ./gradlew test
-      - ls -la build/reports/tests/test
+      - ls -la build/test-results/test
 reports:
   junit-sample-report:
     files:
-      - '**/*'
-    base-directory: build/reports/tests/test
+      - '*'
+    base-directory: build/test-results/test
     discard-paths: no
