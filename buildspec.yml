@@ -7,7 +7,7 @@ phases:
       - ./gradlew test
       - ls -la build/test-results/test
 reports:
-  junit-sample-report:
+  test-report:
     files:
       - '*'
     base-directory: build/test-results/test
